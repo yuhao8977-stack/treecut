@@ -1,0 +1,1152 @@
+[
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T15:05:36.447946",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 6,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 0,
+          "generation_video_log": 0,
+          "generation_material_log": 0,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T15:54:19.747912",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 6,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 0,
+          "generation_video_log": 0,
+          "generation_material_log": 0,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T15:54:49.200460",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 6,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 0,
+          "generation_video_log": 0,
+          "generation_material_log": 0,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T15:56:52.046941",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 6,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 0,
+          "generation_video_log": 0,
+          "generation_material_log": 0,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 2,
+    "timestamp": "2026-06-12T15:59:19.667624",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 6,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 0,
+          "generation_video_log": 0,
+          "generation_material_log": 0,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 3,
+    "timestamp": "2026-06-12T16:03:06.905856",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 6,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 0,
+          "generation_video_log": 0,
+          "generation_material_log": 0,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      },
+      {
+        "action": "single_generate",
+        "keyword": "奶油风岛台",
+        "success": false,
+        "error": {
+          "type": "Timeout",
+          "msg": "生成超时(120s)"
+        }
+      }
+    ],
+    "errors_found": [
+      {
+        "type": "Timeout",
+        "msg": "生成超时(120s)"
+      }
+    ],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 4,
+    "timestamp": "2026-06-12T16:05:05.818038",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 6,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 0,
+          "generation_video_log": 0,
+          "generation_material_log": 0,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 5,
+    "timestamp": "2026-06-12T16:10:31.075016",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 6,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 0,
+          "generation_video_log": 0,
+          "generation_material_log": 0,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      },
+      {
+        "action": "batch_generate",
+        "count": 2,
+        "success": true,
+        "error": null
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T16:43:17.218543",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 13,
+          "generation_video_log": 2,
+          "generation_material_log": 13,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T16:43:25.468188",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 13,
+          "generation_video_log": 2,
+          "generation_material_log": 13,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T17:15:49.438405",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 13,
+          "generation_video_log": 2,
+          "generation_material_log": 13,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 2,
+    "timestamp": "2026-06-12T17:18:31.734524",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 13,
+          "generation_video_log": 2,
+          "generation_material_log": 13,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      },
+      {
+        "action": "frame_annotation",
+        "success": false,
+        "error": {
+          "type": "Timeout",
+          "msg": "全帧识别超时(60s), 已跳过"
+        },
+        "frames_analyzed": 0,
+        "mode": "quick"
+      }
+    ],
+    "errors_found": [
+      {
+        "type": "Timeout",
+        "msg": "全帧识别超时(60s), 已跳过"
+      }
+    ],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 3,
+    "timestamp": "2026-06-12T17:25:02.004689",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 18,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 13,
+          "generation_video_log": 2,
+          "generation_material_log": 13,
+          "material_feedback": 0,
+          "video_frames": 3
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      },
+      {
+        "action": "single_generate",
+        "keyword": "奶油风岛台",
+        "success": false,
+        "error": {
+          "type": "Timeout",
+          "msg": "生成超时(120s)"
+        }
+      }
+    ],
+    "errors_found": [
+      {
+        "type": "Timeout",
+        "msg": "生成超时(120s)"
+      }
+    ],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T17:45:09.445226",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 26,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 13,
+          "generation_video_log": 2,
+          "generation_material_log": 13,
+          "material_feedback": 0,
+          "video_frames": 11
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 2,
+    "timestamp": "2026-06-12T17:49:27.727051",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 26,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 13,
+          "generation_video_log": 2,
+          "generation_material_log": 13,
+          "material_feedback": 0,
+          "video_frames": 11
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      },
+      {
+        "action": "frame_annotation",
+        "success": false,
+        "error": {
+          "type": "Timeout",
+          "msg": "全帧识别(CPU)超时, 流水线代码正常"
+        },
+        "frames_found": 0,
+        "mode": "single_frame"
+      }
+    ],
+    "errors_found": [
+      {
+        "type": "Timeout",
+        "msg": "全帧识别(CPU)超时, 流水线代码正常"
+      }
+    ],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 3,
+    "timestamp": "2026-06-12T17:53:49.083082",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 26,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 13,
+          "generation_video_log": 2,
+          "generation_material_log": 13,
+          "material_feedback": 0,
+          "video_frames": 11
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      },
+      {
+        "action": "single_generate",
+        "keyword": "奶油风岛台",
+        "success": false,
+        "error": {
+          "type": "Timeout",
+          "msg": "生成超时(120s)"
+        }
+      }
+    ],
+    "errors_found": [
+      {
+        "type": "Timeout",
+        "msg": "生成超时(120s)"
+      }
+    ],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 4,
+    "timestamp": "2026-06-12T17:58:05.523889",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 26,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 13,
+          "generation_video_log": 2,
+          "generation_material_log": 13,
+          "material_feedback": 0,
+          "video_frames": 11
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      },
+      {
+        "action": "frame_annotation",
+        "success": false,
+        "error": {
+          "type": "Timeout",
+          "msg": "全帧识别(CPU)超时, 流水线代码正常"
+        },
+        "frames_found": 0,
+        "mode": "single_frame"
+      }
+    ],
+    "errors_found": [
+      {
+        "type": "Timeout",
+        "msg": "全帧识别(CPU)超时, 流水线代码正常"
+      }
+    ],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 5,
+    "timestamp": "2026-06-12T18:04:33.682546",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 26,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 13,
+          "generation_video_log": 2,
+          "generation_material_log": 13,
+          "material_feedback": 0,
+          "video_frames": 11
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      },
+      {
+        "action": "batch_generate",
+        "count": 2,
+        "success": true,
+        "error": null
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T22:15:02.778010",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 39,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 24,
+          "generation_video_log": 4,
+          "generation_material_log": 24,
+          "material_feedback": 0,
+          "video_frames": 20
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T22:40:59.722057",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 39,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 24,
+          "generation_video_log": 4,
+          "generation_material_log": 24,
+          "material_feedback": 0,
+          "video_frames": 20
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  },
+  {
+    "iteration": 1,
+    "timestamp": "2026-06-12T23:27:39.149681",
+    "test_results": [
+      {
+        "action": "syntax_check",
+        "success": true,
+        "errors": []
+      },
+      {
+        "action": "db_integrity",
+        "success": true,
+        "error": null,
+        "stats": {
+          "materials": 16143,
+          "sqlite_sequence": 8,
+          "video_registry": 6745,
+          "ctr_feedback": 0,
+          "trending_analysis": 0,
+          "account_matrix": 0,
+          "analysis_log": 756,
+          "video_annotations": 39,
+          "annotation_feedback": 0,
+          "tag_learning": 0,
+          "learned_scripts": 275,
+          "generation_log": 0,
+          "model_calls": 0,
+          "model_usage_log": 0,
+          "material_generation_log": 24,
+          "generation_video_log": 4,
+          "generation_material_log": 24,
+          "material_feedback": 0,
+          "video_frames": 20,
+          "script_material_preference": 0
+        }
+      },
+      {
+        "action": "system_status",
+        "success": true,
+        "error": null,
+        "checks": {
+          "FAISS索引": "[OK]",
+          "素材片段": "有数据",
+          "DeepSeek": "[OK]"
+        }
+      }
+    ],
+    "errors_found": [],
+    "fixes_applied": [],
+    "success": true
+  }
+]

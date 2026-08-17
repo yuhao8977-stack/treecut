@@ -1,0 +1,15 @@
+{
+  "pitch_mean": 220.0,
+  "pitch_range": [
+    150,
+    350
+  ],
+  "speech_rate": 4.0,
+  "energy_mean": 0.5,
+  "source_files": [
+    "training_sample.wav"
+  ],
+  "trained_at": "2026-06-07T15:26:32.603817",
+  "version": "1.0",
+  "updated": "2026-06-07T15:26:32.603817"
+}

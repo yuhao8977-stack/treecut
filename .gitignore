@@ -1,0 +1,52 @@
+# ============================================================
+# 树剪 (TreeCut) — Git 忽略规则
+# ============================================================
+
+# 环境变量 (含 API Key)
+.env
+
+# 本地配置文件 (含路径信息)
+config.json
+
+# Python 缓存
+*.pyc
+__pycache__/
+
+# 日志文件
+*.log
+error.log
+dispatch_log.json
+review_audit.json
+audit_report.json
+
+# 输出目录 (配音/粗剪/文案)
+05_配音/
+03_粗剪输出/
+04_文案/
+
+# AI 素材库
+ai_material_library.db
+ai_material_library.db.bak_*
+task_log.db
+material_faiss.index
+material_faiss_idmap.json
+media_cache.json
+material_meta.json
+
+# 临时文件
+*.tmp
+*.bak
+
+# 模型目录（约 7GB，通过下载脚本获取，清单见 models_manifest.txt）
+models/
+
+# 素材目录
+02_BGM/
+shipin/
+AI素材库/
+material_engine_v3/database/
+
+# 大文件（超 GitHub 100MB 限制）
+*.safetensors
+*.pt
+*.index

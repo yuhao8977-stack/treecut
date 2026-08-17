@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  treecut-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: treecut-app
+    ports:
+      - "8000:8000"
+      - "7860:7860"
+    environment:
+      - DEBUG=False
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - TREECUT_WEB_TOKEN=${TREECUT_WEB_TOKEN:-}
+      - TREECUT_SKIP_VISION=${TREECUT_SKIP_VISION:-true}
+    volumes:
+      - ./data:/app/data
+      - ./02_BGM:/app/02_BGM
+      - ./03_粗剪输出:/app/03_粗剪输出
+      - ./shipin:/app/shipin
+    restart: always
+
+  treecut-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: treecut-web
+    ports:
+      - "7861:7860"
+    environment:
+      - DEBUG=False
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - TREECUT_WEB_TOKEN=${TREECUT_WEB_TOKEN:-}
+      - TREECUT_SKIP_VISION=${TREECUT_SKIP_VISION:-true}
+    command: ["python", "树剪.py", "--web"]
+    restart: always

@@ -1,0 +1,30 @@
+# 树剪 TreeCut 模型清单
+# 模型总大小约 7GB，因超出 GitHub 单文件限制（100MB）未纳入仓库。
+# 请使用以下脚本下载后放入 models/ 目录，并用 verify_models.py 校验。
+
+## 模型列表
+
+### Qwen3-VL-4B-Instruct-FP8（视觉理解，约 5.7GB）
+- models\Qwen3-VL-4B-Instruct-FP8\model-00001-of-00002.safetensors (5118 MB)
+- models\Qwen3-VL-4B-Instruct-FP8\model-00002-of-00002.safetensors (624 MB)
+- 下载：运行 dl_model.bat 或 download_models.py
+
+### SenseVoiceSmall（语音识别，约 893MB）
+- models\SenseVoiceSmall\model.pt (893 MB)
+- 下载：运行 dl_sensevoice.bat
+
+### Florence-2-base（图像理解，约 442MB）
+- models\Florence-2-base\model.safetensors (442 MB)
+- 下载：运行 download_models.py
+
+## 下载脚本
+- dl_model.bat
+- dl_sensevoice.bat
+- Modelscope下载模型.bat
+- 强制下载模型.bat
+- download_models.py
+- verify_models.py / verify_models_force.py（校验）
+
+## 其他大文件（未纳入仓库，本机位置）
+- material_engine_v3\database\material_v3.db (144 MB) — 素材引擎数据库
+- shipin\material_bge_m3.index (60 MB) — 向量索引

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "updated": "2026-06-11T04:07:00.122080",
+  "copywriting": {
+    "hooks": [],
+    "selling_phrases": [],
+    "cta_templates": [],
+    "industry_terms": [],
+    "tone_words": []
+  },
+  "protected_words": {
+    "product_names": [],
+    "material_terms": [],
+    "craft_terms": [],
+    "style_terms": [],
+    "brand_terms": []
+  },
+  "knowledge_base": {
+    "stone_variants": [],
+    "craft_techniques": [],
+    "hardware_items": [],
+    "style_variants": [],
+    "color_names": []
+  },
+  "keyword_mapping": {},
+  "synonyms": {
+    "测试别名1": "测试规范词",
+    "测试别名2": "测试规范词"
+  }
+}

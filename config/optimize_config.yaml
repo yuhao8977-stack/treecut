@@ -1,0 +1,56 @@
+# ==============================================
+# 最终版配置：i5-12490F + 32GB + RTX 3050 6GB 全功能
+# Phase 3 全闭环：质检 → 自动纠错 → 复检 → 归档
+# ==============================================
+performance:
+  use_gpu: true
+  cpu_threads: 10
+  max_memory_usage: 0.75
+  max_vram_usage: 0.85
+  process_priority: "high"
+  enable_cpu_affinity: true
+  enable_cudnn_benchmark: true
+model:
+  whisper_compute_type: "int8_float16"
+  whisper_beam_size: 3
+  whisper_batch_size: 10
+  whisper_num_workers: 1
+  ocr_use_gpu: true
+  ocr_batch_size: 8
+  video_decode_device: "gpu"
+sampling:
+  base_sample_fps: 3.0
+  min_sample_fps: 0.5
+  max_sample_fps: 6.0
+  scene_change_threshold: 25
+cache:
+  enable: true
+  enable_memory_cache: true
+  memory_cache_size_mb: 2048
+  max_cache_days: 30
+  auto_clean: true
+workflow:
+  parallel_tasks: 3
+  enable_pipeline: true
+  retry_times: 3
+  auto_degrade_on_oom: true
+# 高级质检（Phase 2）
+advanced_quality:
+  enable: true
+  enable_brand_detect: true
+  blur_threshold: 60.0
+  stutter_threshold: 2.0
+# 场景理解（Phase 2）
+scene_understanding:
+  enable: true
+  tag_set: ["产品展示", "安装过程", "细节特写", "空镜场景", "人物出镜", "文字说明"]
+# BGM分类（Phase 2）
+audio_classifier:
+  enable: true
+  style_tags: ["轻快活泼", "舒缓治愈", "动感节奏", "大气震撼", "温馨日常"]
+# 自动纠错（Phase 3 新增）
+auto_corrector:
+  enable: true
+  auto_recheck: true
+  keep_original: true
+  output_dir: "./data/output/corrected"

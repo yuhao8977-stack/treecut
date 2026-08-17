@@ -1,0 +1,61 @@
+# ==============================================
+# 全局系统配置 | 适配 i5-12490F + 32GB + RTX 3050 6GB
+# ==============================================
+system:
+  name: "视频智能生产系统"
+  version: "3.0.0"
+  data_dir: "./data"
+  log_dir: "./data/logs"
+  model_dir: "./data/models"
+performance:
+  use_gpu: true
+  cpu_threads: 10
+  max_memory_usage: 0.75
+  max_vram_usage: 0.85
+  process_priority: "high"
+  enable_cpu_affinity: true
+  enable_cudnn_benchmark: true
+model_pool:
+  enable_lazy_load: true
+  lru_idle_minutes: 5
+  max_vram_mb: 5100
+  resident_models: ["faster_whisper", "rapid_ocr"]
+  on_demand_models: ["scene_llm", "yolov8", "yamnet"]
+sampling:
+  base_sample_fps: 3.0
+  min_sample_fps: 0.5
+  max_sample_fps: 6.0
+  scene_change_threshold: 25
+cache:
+  enable: true
+  enable_memory_cache: true
+  memory_cache_size_mb: 2048
+  max_cache_days: 30
+  auto_clean: true
+workflow:
+  enable_persistence: true
+  auto_retry_times: 3
+  auto_degrade_on_oom: true
+  default_parallel: 2
+process:
+  enable_isolation: true
+  worker_process_num: 2
+  auto_restart_on_crash: true
+vector_store:
+  enable: true
+  index_path: "./data/features/vector.index"
+  embedding_model: "paraphrase-multilingual-MiniLM-L12-v2"
+dashboard:
+  port: 8501
+  auto_refresh_seconds: 5
+advanced_quality:
+  blur_threshold: 60.0
+  stutter_threshold: 2.0
+auto_correct:
+  enable: true
+  auto_recheck: true
+  keep_original: true
+  output_dir: "./data/output/corrected"
+  standard_resolution: "1080x1920"
+  standard_fps: 30
+  target_bitrate: 3000000
