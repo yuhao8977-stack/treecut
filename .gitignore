@@ -55,3 +55,11 @@ material_engine_v3/database/
 *.db-wal
 material_usage.db
 data/db/
+# B类运行数据补充（音频输入输出/缓存/日志）
+custom_voice/input/
+custom_voice/processed/
+*.mp3
+*.wav
+cache/
+logs/
+exports/
