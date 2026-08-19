@@ -50,3 +50,8 @@ material_engine_v3/database/
 *.safetensors
 *.pt
 *.index
+# SQLite 运行时数据/临时文件（禁止上传）
+*.db-shm
+*.db-wal
+material_usage.db
+data/db/
