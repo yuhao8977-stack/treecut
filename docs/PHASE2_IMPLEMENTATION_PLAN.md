@@ -46,6 +46,19 @@ Gate 顺序（总指令 §39）：P0 架构审计+Git基线 → P1 扫描+SQLite
 
 **验收**：Z 盘抽样目录（建议 10–50GB 或 100–500 条代表视频）扫描可中断后续跑；重复启动不重复处理已完成文件；损坏文件不拖死。
 
+### ✅ P1 已完成（2026-08-19，实现在独立仓库 `yuhao8977-stack/treecut-v13`）
+
+- **扫描器**：复用 v13 `Catalog.scan`（增量、符号链接防护、扩展名白名单、网络盘支持）— 实测通过
+- **文件指纹**：新增 `library/hash_utils.py`（完整流式 SHA256 4MiB 分块 + size/首尾 1MiB 快速指纹）
+- **元数据**：新增 `library/assets.py` assets 表 + `probe_worker.py`（ffprobe 采集 duration/resolution/fps/codec/audio，PATH 回退）
+- **统一 SQLite**：assets 表（asset_id=UUID+指纹），`--migrate-v12` 从 v12 库只读迁移（备份先行、标签导入、缺失跳过）
+- **任务队列**：probe_status(pending/running/done/failed/skipped)+attempts+error；`recover_interrupted_probes()` 崩溃后自动收回；`max_probe_attempts=3` 重试上限
+- **IO 容错**：损坏文件 3 次重试后 skipped 不拖死；网络盘超时走 catalog 重试
+- **实测**：真实 4K HEVC mov / 1080x1080 h264 成片元数据正确；重复文件完整 SHA256 一致；v13 生产库 0 修改（15378 行不变）
+- **测试**：`tests/` 6 项 pytest 全通过（hash/assets/重试上限/中断恢复/迁移只读+标签/缺失库）
+- **文档**：`docs/P1_SCAN_ASSETS.md`（v13 仓库）
+- **遗留**：Z 网络盘全量扫描待 Z 盘可用时执行（10–50GB 小目录起步）；并行 worker（2–6 路）为 P1.1 增强项
+
 ## P2 场景切分 + 关键帧 + ASR + OCR（镜头级资产化）
 
 1. **场景切分**：PySceneDetect ContentDetector，先调阈值（v12 配置 scene_change_threshold=25）；保存 segments(start_ms/end_ms/scene_no)；禁止逐帧大模型
