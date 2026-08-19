@@ -59,6 +59,26 @@ Gate 顺序（总指令 §39）：P0 架构审计+Git基线 → P1 扫描+SQLite
 - **文档**：`docs/P1_SCAN_ASSETS.md`（v13 仓库）
 - **遗留**：Z 网络盘全量扫描待 Z 盘可用时执行（10–50GB 小目录起步）；并行 worker（2–6 路）为 P1.1 增强项
 
+### ✅ P1.1 已完成（2026-08-19，实现在独立仓库 `yuhao8977-stack/treecut-v13`）
+
+- **Canonical Asset Registry**：确认 `assets` 为唯一素材身份主表；所有后续表经 `asset_id` 关联，禁止四套身份体系（docs/ASSET_DATA_MODEL.md）
+- **Stage 级状态机**：`asset_processing_state`（10 阶段 × 9 状态 NEW/PENDING/PROCESSING/DONE/PARTIAL/FAILED/SKIPPED/STALE/REVIEW，PRIMARY KEY(asset_id,stage)）
+- **处理历史**：`processing_history`（每次状态转移的 old/new/reason/model/version/time，能回答"为什么今天又重跑 ASR"）
+- **位置追踪**：`asset_locations`（移动/改名/多副本；current=1 当前路径，历史路径保留）
+- **幂等**：`should_process()` 统一判定——fingerprint+pipeline+algorithm+model 一致且 DONE → SKIP_ALREADY_DONE
+- **依赖图**：`PIPELINE_DEPENDENCIES.md`；ASR 模型升级仅 asr/labels/embedding STALE，scene/keyframe/ocr 保持 DONE
+- **移动/改名不产生新 asset**：内容协调复用 asset_id（实测改名后 assets 总数不变）
+- **文件修改**：变化 → 下游 STALE → 重新排队
+- **MISSING/OFFLINE**：不删历史数据（sources.online=0 / available=0，恢复后还原）
+- **分层哈希**：Fast Identity(size+mtime+首尾1MiB) 优先；Full SHA256 仅疑似重复/≥200MB 才计算（避免 3TB 全量读盘）
+- **增量扫描**：`--inc-scan` 输出 NEW/CHANGED/MOVED/MISSING/UNCHANGED；二次扫描 unchanged 不重复处理
+- **CLI**：`--inc-scan/--lifecycle-dashboard/--lifecycle-list/--mark-stale`（状态筛选）
+- **素材根目录配置**：v13 `Settings.material_sources`（绝对路径校验），CLI `--inc-scan PATH` 显式传参，不硬编码 C/Z 盘
+- **测试**：14/14 pytest（P1.1 新增 Test A–G + 一致性 8 项）
+- **实测**：二次扫描 new:0 unchanged:5；改名/移动 asset_id 不变；损坏文件 SKIPPED；重复文件合并同一 canonical asset
+- **文档**：docs/ASSET_DATA_MODEL.md、docs/PIPELINE_DEPENDENCIES.md、reports/P1_1_ASSET_LIFECYCLE.md、BACKLOG.md（全局命名规则 B001=account_id/TC_CONTENT_TAGS/CT01-CT12）
+- **遗留**：Z 网络盘 100/1000 视频 Benchmark 待 Z 盘可用；UI 9 页状态显示（BACKLOG 规划）；并行 worker P2 接入
+
 ## P2 场景切分 + 关键帧 + ASR + OCR（镜头级资产化）
 
 1. **场景切分**：PySceneDetect ContentDetector，先调阈值（v12 配置 scene_change_threshold=25）；保存 segments(start_ms/end_ms/scene_no)；禁止逐帧大模型
